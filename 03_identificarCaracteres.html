@@ -6,9 +6,20 @@
     */
 
     //Entrada
-
-
+    const palavra = prompt('Digite uma palavra').toLowerCase().trim()
+    let palavraSoletrada = Array.from(palavra)
+    let vogais = []
+    let consoantes = []
     //Processamento
+    for (const quantidade of palavraSoletrada) {
+        if (quantidade == "a" || quantidade == "e" || quantidade == "i" || quantidade == "o" || quantidade == "u") {
+            vogais.push(quantidade)
+        }
+        else {
+            consoantes.push(quantidade)
+        }
+    }
+    alert(`A quantidade de letras vogais é ${vogais.length} e a quantidade de letras consoantes é ${consoantes.length}`)
 
 
     //Saída

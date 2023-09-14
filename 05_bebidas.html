@@ -7,9 +7,16 @@
     */
 
     //Entrada
-
-
+    let bebidas = ["Cerveja", "Vinho", "Suco Natural", "Tequila", "Água", "Refrigerante", "Vodka"];
+    let naoAlcolicas = []
     //Processamento
+    for (const alcolicas of bebidas) {
+        const verficacao = prompt(`Considere as bebidas ${alcolicas} e informe com A para as bebidas que são alcólicas e com N para aquelas que não possuem`).toUpperCase().trim()
+        if (verficacao == "N"){
+         naoAlcolicas.push(alcolicas)
+        }
+    }
+    alert(`As bebidas permitidas para menores de 18 anos é ${naoAlcolicas.join(", ")}`)
 
 
     //Saída

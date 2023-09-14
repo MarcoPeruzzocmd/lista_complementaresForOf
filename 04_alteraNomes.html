@@ -8,9 +8,13 @@
     */
 
     //Entrada
-
-
+    let nomes = ["Hilário", "Rafaela", "José", "Bárbara", "Fábio", "Júlia"];
+    let correcao = []
     //Processamento
+    for (const nomes of nomes) {
+        correcao.push(nomes.replace("á", "a").replace("é", "e").replace("í", "i").replace("ó", "o").replace("ú", "u"))
+    }
+    alert(`${correcao}`)
 
 
     //Saída
